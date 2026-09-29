@@ -21,11 +21,11 @@ jobs:
         run: |
           echo "Checking project ZIP..."
           ls -lh
-          test -f SurveyQuantAndroid_v1.0.45_ALL_PROJECTS_FIXES.zip
+          test -f SurveyQuantAndroid_v1.0.45_JAVA_FIX.zip
 
       - name: Extract SurveyQuant Project
         run: |
-          unzip -o SurveyQuantAndroid_v1.0.45_ALL_PROJECTS_FIXES.zip
+          unzip -o SurveyQuantAndroid_v1.0.45_JAVA_FIX.zip
           cp -r SurveyQuantAndroid/. .
 
       - name: Setup Java 17
